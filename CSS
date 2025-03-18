@@ -1,1 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+:root{
+    --primary:#e8def8;
+    --element:#d473e3;
+    --buttons:#ff66c4;
+    --dark:#340640;
+    --black:#171717;
+    --yellow:#f7e8d1;
+}
 
+p, h1, h2, h3{
+    color: var(--dark);
+    font-weight: lighter;
+}
+
+.header {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-header {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    gap: 1rem;
+}
+
+.left-header {
+    margin-left: 2rem;
+}
+
+.footer {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-footer {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-footer {
+    margin: 2rem;
+}
+
+.footer p{
+    margin:0.5rem;
+}
+
+.footer img{
+    margin: 0.5rem;
+}
+
+.right-footer h2{
+    display: flex;
+    justify-content: center;
+}
+
+.tekst {
+    display: block;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+}
+
+.sendeinfo, p {
+    margin-bottom:0.5rem;
+    margin-top: 0.5rem;
+}
+
+.foreslag {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    width: 80vw;
+    text-align: center;
+}
+
+.sendeinfo {
+    margin-top: 4rem;
+}
+
+.sortfirkant {
+    width: 80vw;
+    height: 80vw;
+    background-color: var(--black);
+    margin: auto;
+    border-radius: 12%;
+}
+
+.lillafirkant {
+    width:60vw;
+    display: flex;
+    background-color: var(--dark);
+    border-radius: 0 0 32px 32px;
+    margin: auto;
+    margin-bottom: 4rem;
+    justify-content: space-between;
+}
+
+.produktnavnogpris p{
+     color: var(--yellow);
+    margin-left: 1.5rem;
+}
+
+.hjerte {
+    margin-right: 1.5rem;
+    margin-top: 0.5rem;
+    color: var(--yellow);
+}
+
+.sortrektangel {
+    width: 90vw;
+    height: 120vw;
+    background-color: var(--black);
+    margin: auto;
+    border-radius: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lillarektangel {
+    width:75vw;
+    height: 20vw;
+    display: flex;
+    background-color: var(--dark);
+    border-radius: 0 0 32px 32px;
+    margin: auto;
+    margin-bottom: 4rem;
+    justify-content: space-between;
+    z-index:-1;
+    bottom:1rem;
+    position: relative;
+    align-items: center;
+}
+
+.leftarrow, .rightarrow {
+    margin: 2rem;
+    top:82%;
+    position: relative;
+}
+
+.hjerte1 {
+    height:5rem;
+    width:3rem;
+    background-color: var(--buttons);
+    padding: 1rem;
+    border-radius: 1000px 1000px 0 0;
+    position: absolute;
+    left:70vw;
+    top:10rem;
+    z-index: -1;
+}
+
+.produkt1 {
+    margin-top: 4rem;
+margin-left: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.shoppingcart
+{
+    background-color: var(--buttons);
+    height: 8rem;
+    width: 8rem;
+    border-radius: 1000px;
+    border-color: var(--primary);
+    border-style: solid;
+    position: absolute;
+    margin: 0 auto;
+    left:50%;
+    top: 55rem;
+    transform: translate(-50%, -50%);
+}
+
+.pris p{
+    color: var(--primary);
+    margin-left: 1.5rem;
+}
+
+.antal button h2{
+    background-color: transparent;
+    color: var(--primary);
+    border-style: none;
+    font-size: 2rem;
+}
+
+.antal input {
+    background-color: transparent;
+    appearance: none;
+    -moz-appearance:none;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    flex: 1;
+    width: 1rem;
+    color: var(--primary);
+    padding-left: 1rem;
+font-size: 2rem;
+    justify-content: center;
+}
+
+.antal {
+    display:flex;
+    justify-content: space-between;
+    margin-right: 1.5rem;
+    font-size: ;
+    background-color: transparent;
+}
+
+.antal button {
+    background-color: transparent;
+    color: var(--primary);
+    border-style: none;
+    font-size: 2rem;
+}
