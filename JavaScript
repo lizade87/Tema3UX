@@ -1,45 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll(".product-gallery img");
-    const gallery = document.querySelector(".product-gallery");
-    const prevButton = document.querySelector(".prev");
-    const nextButton = document.querySelector(".next");
-    let currentIndex = 0;
+const checkmarked = document.querySelector('.hjerte1');
+checkmarked.addEventListener('click', checkedfunction);
+function checkedfunction(){
+    checkmarked.style.backgroundColor='red';
+}
 
-    if (!gallery || !images.length) {
-        console.error("Galleri eller billeder ikke fundet!");
-        return;
-    }
+const checkmarked1 = document.querySelectorAll('.hjerte');
 
-    function updateGallery() {
-        console.log("Skifter til billede:", currentIndex); // Debug log
-
-        // Fjern 'active' fra alle billeder
-        images.forEach((img) => img.classList.remove("active"));
-
-        // Tilføj 'active' til det aktuelle billede
-        images[currentIndex].classList.add("active");
-
-        // Beregn den nye forskydning
-        const offset = -currentIndex * (images[0].offsetWidth + 10); // 10px er gap i CSS
-        gallery.style.transform = translateX(${offset}px);
-    }
-
-    if (prevButton && nextButton) {
-        prevButton.addEventListener("click", () => {
-            currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
-            console.log("Forrige billede valgt:", currentIndex);
-            updateGallery();
-        });
-
-        nextButton.addEventListener("click", () => {
-            currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-            console.log("Næste billede valgt:", currentIndex);
-            updateGallery();
-        });
-    } else {
-        console.error("Knapper ikke fundet!");
-    }
-
-    // Initial opdatering
-    updateGallery();
-});
+checkmarked1.forEach(function (element) {
+    element.addEventListener('click', function(){
+        element.style.backgroundColor='red';
+    })
+})
