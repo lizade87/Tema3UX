@@ -152,21 +152,28 @@ p, h1, h2, h3{
 }
 
 .hjerte1 {
-    height:5rem;
+    height:3.1rem;
     width:3rem;
     background-color: var(--buttons);
     padding: 1rem;
     border-radius: 1000px 1000px 0 0;
     position: absolute;
-    left:70vw;
-    top:10rem;
-    z-index: -1;
+    left:82vw;
+    top:-2.7rem;
 }
 
 .produkt1 {
     margin-top: 4rem;
 margin-left: 2.5rem;
     margin-bottom: 0.5rem;
+
+    flex-wrap: wrap;
+    width: 15rem;
+    margin-right: 0;
+}
+
+.product-container {
+    position: relative;
 }
 
 .shoppingcart
@@ -180,7 +187,7 @@ margin-left: 2.5rem;
     position: absolute;
     margin: 0 auto;
     left:50%;
-    top: 55rem;
+    bottom: 1rem;
     transform: translate(-50%, -50%);
 }
 
@@ -226,4 +233,49 @@ font-size: 2rem;
     color: var(--primary);
     border-style: none;
     font-size: 2rem;
+}
+
+-------------
+
+
+--------------
+.checkout-button {
+    display: inline-block;
+    background-color: #ff69b4; /* Lyserød farve */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.header-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+-------------
+.cancel {
+    display: inline-block;
+    background-color: #4F23FC; /* Lyserød farve */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.checkout-button {
+    display: inline-block;
+    background-color: #ff69b4; /* Lyserød farve */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
 }
